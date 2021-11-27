@@ -1,0 +1,46 @@
+*{
+    font-family: ' Calibri';
+    background-color: rgba(212, 220, 228, 0.479);
+  
+
+}
+
+*{box-sizing: border-box;}
+
+[class*="col-"] {
+	float: left;
+	}
+
+
+@media screen and (max-width: 1000px) {
+
+    .graphs{
+        display: block;
+        width: 100%;
+    }
+
+    .articles{
+        display: block;
+        width: 100%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .graphs{
+        display: block;
+        width: 100%;
+    }
+
+    .articles{
+        display: block;
+        width: 100%;
+    }
+
+    
+
+
+}

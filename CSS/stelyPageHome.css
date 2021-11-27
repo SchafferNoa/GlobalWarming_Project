@@ -1,0 +1,51 @@
+
+
+.rounded-circle{
+    margin: 2%;
+    height: 70px;
+    width: 100px;
+    
+}
+
+.img{
+    margin: 1%;
+    height: 370px;
+    width: 1500px;
+
+}
+
+.video{   
+     margin: 1%;
+
+     height: 600px;
+
+}
+
+
+
+.news {
+    margin: 4px;
+    padding: 12px;
+   }
+  
+  .news > h1, .new {
+    margin: 12px;
+    padding: 9px;
+    
+  }
+  
+  .new {
+
+  }
+  
+  .new > h2, p {
+    margin: 6px;
+    font-size: 95%;
+  }
+
+  .navbar{
+      background-color: black;
+  }
+
+
+  
