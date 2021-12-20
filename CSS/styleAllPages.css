@@ -1,15 +1,13 @@
 *{
     font-family: ' Calibri';
     background-color: rgba(212, 220, 228, 0.479);
-  
+    box-sizing: border-box;
 
 }
 
-*{box-sizing: border-box;}
-
 [class*="col-"] {
 	float: left;
-	}
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -23,10 +21,6 @@
         display: block;
         width: 100%;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 700px) {
@@ -39,8 +33,4 @@
         display: block;
         width: 100%;
     }
-
-    
-
-
 }
