@@ -26,17 +26,15 @@
     padding: 12px;
    }
   
-.news > h1, .new {
+.news > h1 {
   margin: 12px;
   padding: 9px;
 }
   
-/* .new {
-
-  } */
-  
-.new > h2, p {
-  margin: 6px;
+.news>article>h2, .news>article>p, .news>article>a {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 15px;
   font-size: 95%;
 }
 
