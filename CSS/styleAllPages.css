@@ -9,6 +9,30 @@
 	float: left;
 }
 
+.headImg{
+    margin: 1%;
+    height: 370px;
+    width: 1500px;
+
+}
+
+.navbar{
+    background-color: rgb(214, 216, 218);
+    font-size: 30px;
+    padding: 0%;
+}
+
+.navbar > a, .navbar > div{
+  color: black;
+  text-decoration: none;
+  background-color: rgb(214, 216, 218);
+}
+
+.navBarSpace{
+  margin-right: 20px;
+  padding: 8px;
+}
+
 
 @media screen and (max-width: 1000px) {
 
