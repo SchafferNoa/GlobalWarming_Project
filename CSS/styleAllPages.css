@@ -34,32 +34,6 @@ body{
   padding: 8px;
 }
 
-
-@media screen and (max-width: 1000px) {
-
-    .graphs{
-        display: block;
-        width: 100%;
-    }
-
-    .articles{
-        display: block;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .graphs{
-        display: block;
-        width: 100%;
-    }
-
-    .articles{
-        display: block;
-        width: 100%;
-    }
-}
-
 @charset "UTF-8";
 /* Bootstrap v5.1.3 (https://getbootstrap.com/)
 Copyright 2011-2021 The Bootstrap Authors
