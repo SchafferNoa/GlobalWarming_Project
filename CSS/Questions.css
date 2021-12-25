@@ -66,3 +66,8 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   margin-bottom: 3%;
 }
 
+.questions>li:hover{
+  font-weight: bold;
+  font-size: 105%;
+}
+
