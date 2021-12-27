@@ -33,51 +33,7 @@
 
 <body>
 
-    <header>
-        <!-- image for top of the page -->
-        <div class="row">
-            <img class="headImg"
-                src="https://www.fairobserver.com/wp-content/uploads/2019/07/Climate-change-climate-global-warming-environment.jpg"
-                alt="תמונה לרקע" style="width: 100%; height: 300px;">
-        </div>
-    </header>
-
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand navBarSpace" href="../Index.html">
-                <h3>Global Warming</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" aria-current="page" href="Association.html">
-                            <h3>Associations</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="#">
-                            <h3>Suggest Ideas</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="#">
-                            <h3>Articles</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="Questions.html">
-                            <h3>Q&A</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header id="header"></header>
 
     <main>
         <!-- headline -->
@@ -89,7 +45,8 @@
 
         <!-- Questions - categories > questions > answers -->
         <section class="list-group list-group-checkable">
-            <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs" id="Recycling" value="1">
+            <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs" id="Recycling"
+                value="1">
             <label class="list-group-item py-3" for="Recycling">
                 <h3>Recycling</h3>
                 <span class="d-block small opacity-50">For those who want to know more about recycle</span>
@@ -97,17 +54,25 @@
             <!-- questions about recycle -->
             <div class="reveal-if-active">
                 <ul class="questions">
-                    <li>Is recycling really helping the planet?</li> <!-- By reducing air and water pollution and saving energy, recycling offers an important environmental benefit: it reduces emissions of greenhouse gases, such as carbon dioxide, methane, nitrous oxide and chlorofluorocarbons, that contribute to global climate change.
-                    -->
-                    <li>What happens with the garbage we recycle? Where does it go?</li> <!-- פסולת הנייר והקרטון מועברת למפעל מיחזור ההופך את הפסולת לחומר גלם חדש לייצור מוצרי נייר.
+                    <li>Is recycling really helping the planet?</li>
+                    <p class="answer">By reducing air and water pollution and saving energy, recycling offers an
+                        important environmental benefit: it reduces emissions of greenhouse gases, such as carbon
+                        dioxide, methane, nitrous oxide and chlorofluorocarbons, that contribute to global climate
+                        change.</p>
+                    <li>What happens with the garbage we recycle? Where does it go?</li>
+                    <!-- פסולת הנייר והקרטון מועברת למפעל מיחזור ההופך את הפסולת לחומר גלם חדש לייצור מוצרי נייר.
                         בקבוקי הפלסטיק הנאספים במיחזוריות מגיעים אל מפעל מיחזור פלסטיק והופכים לחומר גלם לייצור מוצרי פלסטיק כגון: סלסלות, ריהוט ופליז.
                         פסולת הזכוכית מועברת למפעל מיחזור זכוכית לייצור מוצרים חדשים.
                         פסולת האריזות נאגרת, ממוינת על פי סוגי החומרים השונים ובהתאמה מועברת למפעלי המיחזור השונים.
                         הפסולת האלקטרונית מועברת למפעל מיחזור מתאים המפרק את הפסולת לסוגיה ומעביר למיחזור למפעלים שונים.
                         פסולת טקסטיל, בגדים ובדים, משמשים לשימוש חוזר וחלקם מועבר למפעלי מיחזור לייצור סמרטוטים ומוצרי בד שונים.  -->
-                    <li>Where can I find information about all recycling tanks in my city?</li> <!-- באתר האינטרנט ואף כאן באתר נמצאת מפה המתארת את מיקומי המכלים על פי הסוגים השונים. למעבר למפה לחצו כאן - https://www.tmir.org.il/Page/%D7%9E%D7%99%D7%A7%D7%95%D7%9E%D7%99-%D7%A4%D7%97-%D7%A1%D7%92%D7%95%D7%9C -->
-                    <li>If we have so many recycling tanks, why do I still need the green garbage tank?</li> <!-- פח זה מיועד לכל מה שאינו בר מיחזור – הפסולת הרטובה/האורגנית (שיירי מזון), טיטולים משומשים, מגבונים ועוד. כאשר מפרידים את הפסולת לסוגיה, נותרת מעט מאוד פסולת המיועדת לפח הירוק. -->
-                    <li>Why is it important to sort my recycled garbage? Why can't I put everything I recycle in one tank?</li> <!-- שטחי ההטמנה במדינת ישראל הולכים ונעלמים, אתרי הטמנת פסולת רבים נסגרו והתמלאו ואלו הנותרים יספיקו לשנים ספורות בלבד. ככל שנפריד יותר פסולת ונעבירה אל מפעלי מיחזור לשם ייצור חומרים חדשים, כך נצמצם את כמויות הפסולת המגיעות להטמנה.-->
+                    <li>Where can I find information about all recycling tanks in my city?</li>
+                    <!-- באתר האינטרנט ואף כאן באתר נמצאת מפה המתארת את מיקומי המכלים על פי הסוגים השונים. למעבר למפה לחצו כאן - https://www.tmir.org.il/Page/%D7%9E%D7%99%D7%A7%D7%95%D7%9E%D7%99-%D7%A4%D7%97-%D7%A1%D7%92%D7%95%D7%9C -->
+                    <li>If we have so many recycling tanks, why do I still need the green garbage tank?</li>
+                    <!-- פח זה מיועד לכל מה שאינו בר מיחזור – הפסולת הרטובה/האורגנית (שיירי מזון), טיטולים משומשים, מגבונים ועוד. כאשר מפרידים את הפסולת לסוגיה, נותרת מעט מאוד פסולת המיועדת לפח הירוק. -->
+                    <li>Why is it important to sort my recycled garbage? Why can't I put everything I recycle in one
+                        tank?</li>
+                    <!-- שטחי ההטמנה במדינת ישראל הולכים ונעלמים, אתרי הטמנת פסולת רבים נסגרו והתמלאו ואלו הנותרים יספיקו לשנים ספורות בלבד. ככל שנפריד יותר פסולת ונעבירה אל מפעלי מיחזור לשם ייצור חומרים חדשים, כך נצמצם את כמויות הפסולת המגיעות להטמנה.-->
                 </ul>
             </div>
 
@@ -129,21 +94,22 @@
         </section>
     </main>
 
-    <footer class="py-3 my-4">
-        <br><br>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="Index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="Includes/Association.html" class="nav-link px-2 text-muted">Associations</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Suggest Ideas</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Articles</a></li>
-            <li class="nav-item"><a href="Includes/Questions.html" class="nav-link px-2 text-muted">Q&A</a></li>
-        </ul>
-        <p class="text-center text-muted">&copy; 2021 Noa & Adva & Nofar</p>
-    </footer>
+    <div id="footer"></div>
 
+    <!-- bootstrap import -->
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- jQuery functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            // load header
+            $("#header").load("Includes/header.html");
+
+            // load footer
+            $("#footer").load("Includes/footer.html");
+        });
+    </script>
 
 </body>
 

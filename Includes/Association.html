@@ -24,50 +24,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <header>
-        <!-- image for top of the page -->
-        <div class="row">
-            <img src="https://www.fairobserver.com/wp-content/uploads/2019/07/Climate-change-climate-global-warming-environment.jpg"
-                alt="תמונה לרקע" style="width: 100%; height: 300px;">
-        </div>
-    </header>
-
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand navBarSpace" href="../Index.html">
-                <h3>Global Warming</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" aria-current="page" href="Association.html">
-                            <h3>Associations</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="#">
-                            <h3>Suggest Ideas</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="#">
-                            <h3>Articles</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active navBarSpace" href="Questions.html">
-                            <h3>Q&A</h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- load header -->
+    <header id="header"></header>
 
     <section class="associations row align-items-center">
         <article class="diving col ">
@@ -161,6 +119,21 @@
         </article>
 
     </section>
+
+    <!-- load footer -->
+    <div id="footer"></div>
+
+    <!-- jQuery functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            // load header
+            $("#header").load("Includes/header.html");
+
+            // load footer
+            $("#footer").load("Includes/footer.html");
+        });
+    </script>
 
 </body>
 

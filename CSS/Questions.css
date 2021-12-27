@@ -71,3 +71,7 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   font-size: 105%;
 }
 
+.answer{
+  margin-bottom: 3%;
+}
+
