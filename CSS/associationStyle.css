@@ -4,11 +4,28 @@
 
 .diving{
     margin: 2%;
-    font-size: 95%;
-
+    border: 30cm cornflowerblue;
 }
 
 #img1{
     height: 100px;
     width: 300px;
+    margin-left: 15%;
+
 }
+
+.P{
+    text-align: center;
+    font-size:larger;
+    font-style: italic;
+    font-family: Arial;
+}
+
+#img2{
+    height: 110px;
+    width: 140px;
+    margin-left: 33%;
+
+}
+
+
