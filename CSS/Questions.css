@@ -66,12 +66,28 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   margin-bottom: 3%;
 }
 
-.questions>li:hover{
+.ques:hover{
   font-weight: bold;
   font-size: 105%;
 }
 
 .answer{
   margin-bottom: 3%;
+  color: rgb(48, 119, 212);
+  display: none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
 }
 

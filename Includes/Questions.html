@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -9,30 +10,15 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Global Warming</title>
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-
     <!-- Style sheets -->
     <link rel="stylesheet" href="../CSS/Questions.css">
     <link rel="stylesheet" href="../CSS/styleAllPages.css">
 </head>
 
+
 <body>
 
+    <!-- load header -->
     <header id="header"></header>
 
     <main>
@@ -43,7 +29,10 @@
                 to <a href="mailto:GlobalWarming@info.com">GlobalWarming@info.com</a></h3>
         </section>
 
-        <!-- Questions - categories > questions > answers -->
+
+        <!-- Questions: categories > questions > answers -->
+
+        <!-- list of categories (buttons)-->
         <section class="list-group list-group-checkable">
             <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs" id="Recycling"
                 value="1">
@@ -51,15 +40,40 @@
                 <h3>Recycling</h3>
                 <span class="d-block small opacity-50">For those who want to know more about recycle</span>
             </label>
-            <!-- questions about recycle -->
+            <!-- questions about recycle, and answers as paragraphs -->
             <div class="reveal-if-active">
                 <ul class="questions">
-                    <li>Is recycling really helping the planet?</li>
-                    <p class="answer">By reducing air and water pollution and saving energy, recycling offers an
-                        important environmental benefit: it reduces emissions of greenhouse gases, such as carbon
-                        dioxide, methane, nitrous oxide and chlorofluorocarbons, that contribute to global climate
-                        change.</p>
-                    <li>What happens with the garbage we recycle? Where does it go?</li>
+                    <li>
+                        <p id="Q1" class="ques">Is recycling really helping the planet? </p>
+                        <p class="answer">By reducing air and water pollution and saving energy, recycling offers an
+                            important environmental benefit: it reduces emissions of greenhouse gases, such as
+                            carbon
+                            dioxide, methane, nitrous oxide and chlorofluorocarbons, that contribute to global
+                            climate
+                            change.</p>
+                    </li>
+
+                    <li>
+                        <p id="Q2" class="ques">What happens with the garbage we recycle? Where does it go?
+                            <span class="answer">
+                                The paper and cardboard is transferred to a recycling plant that turns the waste into
+                                a new raw material for the production of paper products. <br>
+                                The plastic bottles that are recycled goes to a plastic recycling plant and become a raw
+                                material for the production of plastic products such as: baskets, furniture and
+                                brass.<br>
+                                The glass is transferred to a glass recycling plant for the production of new
+                                products.<br>
+                                The packaging is stored, sorted according to the different types of materials and
+                                transferred to the various recycling plants.<br>
+                                The electronic waste is transferred to a suitable recycling plant that breaks down the
+                                waste
+                                into an issue and transfers it for recycling to various plants.<br>
+                                Textile waste, clothing and fabrics, are used for reuse and some are transferred to
+                                recycling plants for the production of rags and various fabric products.
+                            </span>
+                        </p>
+
+                    </li>
                     <!-- פסולת הנייר והקרטון מועברת למפעל מיחזור ההופך את הפסולת לחומר גלם חדש לייצור מוצרי נייר.
                         בקבוקי הפלסטיק הנאספים במיחזוריות מגיעים אל מפעל מיחזור פלסטיק והופכים לחומר גלם לייצור מוצרי פלסטיק כגון: סלסלות, ריהוט ופליז.
                         פסולת הזכוכית מועברת למפעל מיחזור זכוכית לייצור מוצרים חדשים.
@@ -104,10 +118,15 @@
     <script>
         $("document").ready(function () {
             // load header
-            $("#header").load("Includes/header.html");
+            $("#header").load("header.html");
 
             // load footer
-            $("#footer").load("Includes/footer.html");
+            $("#footer").load("footer.html");
+
+            // show question
+            $(".ques").click(function () {
+                $(".questions>li>.answer").toggle();
+            });
         });
     </script>
 
