@@ -2,7 +2,7 @@
   text-align: center;
   text-decoration: underline;
   margin-top: 2%;
-  font-size: 350%;
+  font-size: 250%;
 }
   
 .opacity-50 { opacity: .5; }
@@ -32,7 +32,7 @@
 }
 .list-group-item-check:checked + .list-group-item {
   color: #fff;
-  background-color: var(--bs-blue);
+    background-color: var(--bs-blue);
 }
 .list-group-item-check[disabled] + .list-group-item,
 .list-group-item-check:disabled + .list-group-item {
@@ -57,13 +57,10 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   transform: scale(1);
 }
 
-.questions{
-  list-style: none;
+.ques{
+  text-decoration: none;
+  color: black;
   font-size: larger;
-}
-
-.questions>li{
-  margin-bottom: 3%;
 }
 
 .ques:hover{
