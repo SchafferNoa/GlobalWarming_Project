@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+.formS{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 6px solid black;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: beige;
+  
+}
+
+.one{
+    border-bottom: 2px solid;
+}
+
+
+.two{
+    border-bottom: 2px solid;
+}
+
+
+
+.footerS{
+ 
+border: 1px black solid;
+   padding:auto;
+   background-color: wheat;
+   /* margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-right: 1%;
+    position: relative;*/
+margin:auto;
+}
+.figureS{
+    margin: auto;
+}
+
+
+.video{   
+    margin: 1%;
+
+    height: 600px;
+
+}
+
+
+.secArticle{
+    padding-left: 15px;
+    margin:auto;
+    font-style: italic;
+    background-color: lightgray;
+    overflow: auto;
+}
+
+p{overflow: auto;margin-bottom: 5%;}
+
+.lbl{
+   /* width:30%;
+    color:black;
+float:left;*/
+display: block;
+padding-right: 10px;
+padding-left: 22px;
+text-indent: -22px;
+
+}
+
+
+.inputt{
+float:left ;
+    width:50%;
+    background-color:white;
+    opacity: 1.0;
+    color: black;
+    
+}
+
+.checkboxx{
+
+width: 13px;
+height: 13px;
+padding: 0;
+margin:0;
+vertical-align:middle;
+position: relative;
+top: -1px;
+*overflow: hidden;
+
+}
+.radio{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align:middle;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;    
+    }
