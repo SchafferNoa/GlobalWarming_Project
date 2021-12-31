@@ -1,14 +1,16 @@
+/* for all the page of Assocuataion Form*/
 *{
     margin:0px;
     padding: 0px;
 }
-body{
-    box-sizing: border-box;
+
+/*organizes what is into the body to be at center of the page  */
+#bodyAssocaitaion{
     display: block;
     text-align: center;
 }
-
-.formS{
+/*Here is everything related to the form itself */
+#formS{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -16,43 +18,36 @@ body{
     padding-left: 1%;
     padding-right: 1%;
     background-color: beige;
+    width:80%
   
 }
-
+/*The first section into the forms,  detalis about the person himself */
 .one{
     border-bottom: 2px solid;
 }
 
-
-.two{
-    border-bottom: 2px solid;
-}
-
-.figureS{
-    margin: auto;
-}
-
-
-.video{   
+/*Here is everything related to the video into the AssociationForm page. */
+#video{   
     margin: 1%;
     height: 600px;
+    width:80%
 }
 
+/*information about the assocation */
 
-.secArticle{
+#secArticle{
     padding-left: 15px;
     margin:auto;
     font-style: italic;
     background-color: lightgray;
     overflow: auto;
+    width:80%;
 }
 
 p{overflow: auto;margin-bottom: 5%;}
 
+/*The name of the labels in the form */
 .lbl{
-   /* width:30%;
-    color:black;
-float:left;*/
 display: block;
 padding-right: 10px;
 padding-left: 22px;
@@ -60,18 +55,17 @@ text-indent: -22px;
 
 }
 
-
+/*The information that is filled out in the form */
 .inputt{
 float:left ;
-    width:50%;
+    width:40%;
     background-color:white;
     opacity: 1.0;
     color: black;
     
 }
-
+/*All the checkbox buttons in the same style */
 .checkboxx{
-
 width: 13px;
 height: 13px;
 padding: 0;
@@ -82,6 +76,8 @@ top: -1px;
 *overflow: hidden;
 
 }
+
+/*All radio buttons in the same style */
 .radio{
     width: 13px;
     height: 13px;

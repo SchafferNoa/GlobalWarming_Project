@@ -13,13 +13,13 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../CSS/associationFormStyle.css">
-    <!-- <link rel="stylesheet" href="../CSS/styleAllPages.css"> -->
+    <link rel="stylesheet" href="../CSS/styleAllPages.css"> 
 
     <title>Global Warming</title>
 
 </head>
 
-<body>
+<body id='bodyAssocaitaion'>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -38,10 +38,11 @@
     <header id="header"></header>
 
     <main>
-        <h1>GREEN COURSE</h1>
-        <iframe class="video col-10" controls src="../linkedFiles/מגמה ירוקה - מובילים אקטיביזם סביבתי.mp4">
+        <h1>GREEN COURSE</h1>>
+        <iframe id="video" controls src="../linkedFiles/מגמה ירוקה - מובילים אקטיביזם סביבתי.mp4">
         </iframe>
-        <section class="secArticle col-10">
+
+        <section id="secArticle">
             <!-- info about association -->
             <article>
                 <h3>Our Mission</h3> <br>
@@ -106,8 +107,9 @@
         <h1>JOIN US!</h1>
         <p>required fields are followed by <span style="color: red;">*</span></p>
 
-        <form class="formS col-6" id="formS" action="/action_page.php" method="post" name="ourForm"
-            onsubmit="return validateForm()">
+        <form id="formS" action="/action_page.php" method="post" name="ourForm"
+            onsubmit="return validateForm()"        
+            >
             <section class="one">
                 <h4>About Me</h4>
                 <p> <label id="first_name" class="lbl"><span style="color: red;">*</span> Your First Name: </label>
@@ -188,14 +190,7 @@
                     <label class="form-check-label" for="flexCheckChecked">
                         Monday
                     </label>
-                </div>
-                <div class="form-check">
-                    <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Monday
-                    </label>
-                </div>
+              
                 <div class="form-check">
                     <input name="availableNames" class="form-check-input" type="checkbox" value=""
                         id="flexCheckChecked">
@@ -256,12 +251,11 @@
 
 
             <section class="three">
-                <p><label>תיבת בחירה:</label>
+                <p><label> Have you heard about Us before ? </label>
                     <select name="select_box" size="1">
-                        <option value="attempt 123">123 ניסיון</option>
-                        <option value="attempt 123" selected>123 ניסיון</option>
-                        <option value="attempt 123">123 ניסיון</option>
-                    </select> (select)
+                        <option value="attempt 123">Yes</option>
+                        <option value="attempt 123" selected>No</option>
+                    </select> 
                 </p>
                 <p>Satisfaction from form <input name="satisfaction" type="range" min="0" max="10" step="1">(range)</p>
                 <p><label>add File <input type="file" name="myFile"></label></p>
