@@ -1,5 +1,7 @@
+alert("hello");
+
 function validateForm() {
-    var checkEmail = document.getElementById(email);
+    var checkEmail = document.getElementById("email");
     var stopFirst = checkEmail.indexOf("@");
     var stopSecond = checkEmail.lastIndexOf(".");
     if (stopSecond + 2 >= checkEmail.length || stopFirst < 1 || stopSecond < stopFirst + 2) {
@@ -27,6 +29,24 @@ function validateForm() {
     }
 
 }
+
+
+document.getElementById("flexCheckChecked").onclick = function () {
+    var otherCheckbox = document.querySelector('input[value="other"]');
+    var otherText = document.querySelector('input[id="otherValue"]');
+    otherText.style.visibility = 'hidden';
+
+    otherCheckbox.addEventListener('change', () => {
+        if (otherCheckbox.checked) {
+            otherText.style.visibility = 'visible';
+            otherText.value = '';
+        } else {
+            otherText.style.visibility = 'hidden';
+        }
+    });
+}
+
+
 
 
 

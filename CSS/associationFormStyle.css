@@ -28,20 +28,6 @@ body{
     border-bottom: 2px solid;
 }
 
-
-
-.footerS{
- 
-border: 1px black solid;
-   padding:auto;
-   background-color: wheat;
-   /* margin-top: 5%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    margin-right: 1%;
-    position: relative;*/
-margin:auto;
-}
 .figureS{
     margin: auto;
 }
@@ -49,9 +35,7 @@ margin:auto;
 
 .video{   
     margin: 1%;
-
     height: 600px;
-
 }
 
 
