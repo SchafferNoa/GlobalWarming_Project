@@ -97,36 +97,33 @@
         </section>
 
         <h1>JOIN US!</h1>
-        <br>
-
+        <p>required firlds are followed by <span style="color: red;">*</span></p>
 
         <form class="formS col-6" id="formS" action="mailto:nofarplotnik@gmail.com" method="post" name="ourForm"
             onsubmit="return validateForm();">
             <section class="one">
                 <h4>About Me</h4>
-                <p> <label id="first_name" class="lbl">Your First Name:</label>
-                    <input type="text" placeholder="Your First name" maxlength="20" autocomplete="on"
+                <p> <label id="first_name" class="lbl"><span style="color: red;">*</span> Your First Name: </label>
+                    <input name="firstName" type="text" placeholder="Your First name" maxlength="20" autocomplete="on"
                         title="Here, You can write your first name" class='inputt' required>
-                    </input>
                 </p>
-                <p> <label id="last_name" class="lbl">Your Last Name : </label><input type="text"
-                        placeholder="Your Last name" maxlength="20" autocomplete="on"
-                        title="Here, You can write your last name" class='inputt' required> </p>
 
-                <p><label id="date" class="lbl">Your Birthday :</label> <input class="inputt" type="date">
+                <p> <label id="last_name" class="lbl"><span style="color: red;">*</span> Your Last Name: </label>
+                    <input name="lastName" type="text" placeholder="Your Last name" maxlength="20" autocomplete="on"
+                        title="Here, You can write your last name" class='inputt' required>
                 </p>
-                <p> <label class="lbl">Phone Number:</label>
 
+                <p><label id="date" class="lbl">Your Birthday: </label> <input class="inputt" type="date"></p>
+                <p><label class="lbl"><span style="color: red;">*</span> Phone Number:</label>
                     <input class="inputt" id="tel" type="tel" name="telphone" placeholder="05#-###-####"
                         pattern="[0]{1}[5]{1}[0-9]{1}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Ten digits code"
                         required>
-                    </input>
 
                 </p>
 
                 <p>
-                    <label class="lbl">Email:</label> <input class="inputt" id="email" type="text"
-                        placeholder="yourMail@something.com" name="email" required></input>
+                    <label class="lbl"><span style="color: red;">*</span> Email:</label> <input class="inputt"
+                        id="email" type="text" placeholder="yourMail@something.com" name="email" required>
                 </p>
             </section>
 
@@ -165,10 +162,6 @@
                     <input type="text" id="otherValue" name="other">
                 </div>
 
-
-
-
-                <p>
                 <h5>Volunteer days are possible: (Please mark)</h5>
 
                 <div class="form-check">
@@ -219,11 +212,8 @@
                         Saturday
                     </label>
                 </div>
-
-
                 <p>
-                <h5>Volunteer days are possible: (Please mark)</h5>
-
+                <h5>Volunteer days are possible: (Please choose)</h5>
 
 
                 <div class="form-check">
@@ -243,8 +233,6 @@
                         Three and up
                     </label>
                 </div>
-
-
                 </p>
             </section>
 
@@ -257,12 +245,10 @@
                         <option value="attempt 123">123 ניסיון</option>
                     </select> (select)
                 </p>
-                <p>Satisfaction form <input type="range" min="0" max="10" step="1"> (range)</p>
+                <p>Satisfaction form <input type="range" min="0" max="10" step="1">(range)</p>
                 <p><label>add File <input type="file" name="myFile"></label></p>
             </section>
             <button type="submit" class="btn btn-primary">Submit</button>
-
-
         </form>
 
     </main>
