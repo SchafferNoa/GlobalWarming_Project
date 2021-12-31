@@ -97,17 +97,11 @@
             </article>
         </section>
 
-        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-            Name: <input type="text" name="fname">
-            <input type="submit" value="Submit">
-        </form>
-
         <!-- volunteering form -->
         <h1>JOIN US!</h1>
         <p>required fields are followed by <span style="color: red;">*</span></p>
 
-        <form class="formS col-6" id="formS" action="/action_page.php" method="post" name="ourForm"
-            onsubmit="return validateForm()">
+        <form class="formS col-6" id="formS" action="#" method="post" name="ourForm" onsubmit="return validateForm()">
             <section class="one">
                 <h4>About Me</h4>
                 <p> <label id="first_name" class="lbl"><span style="color: red;">*</span> Your First Name: </label>
@@ -123,8 +117,10 @@
                 <p><label id="date" class="lbl">Your Birthday: </label> <input name="BirthDay" class="inputt"
                         type="date"></p>
                 <p><label class="lbl"><span style="color: red;">*</span> Phone Number:</label>
-                    <input name="Phone" class="inputt" id="tel" type="tel" name="telphone" placeholder="05#-###-####"
-                        pattern="[0]{1}[5]{1}[0-9]{1}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Ten digits code">
+                    <input name="Phone" class="inputt" id="tel" type="tel" placeholder="05#-###-####"
+                        pattern="[0]{1}[5]{1}[0-9]{1}-[0-9]{3}-[0-9]{4}" maxlength="12"
+                        title="Make sure you enter 10 digits number as required: 05#-###-####">
+                    <span class="alert"><br>Ten digits number: 05#-###-####</span>
 
                 </p>
 
@@ -143,37 +139,37 @@
                 <p>
                 <h5>I would like to participate in the following: (Please mark) </h5>
                 <div class="form-check">
-                    <input name="volunteeringAs" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <input name="flexCheckChecked1" class="form-check-input" type="checkbox" value=""
+                        id="flexCheckChecked1">
+                    <label class="form-check-label" for="flexCheckChecked1">
                         Assistance at fundraising evenings, special projects
                     </label>
                 </div>
                 <div class="form-check">
-                    <input name="volunteeringAs" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <input name="flexCheckChecked2" class="form-check-input" type="checkbox" value=""
+                        id="flexCheckChecked2">
+                    <label class="form-check-label" for="flexCheckChecked2">
                         Conferences and events </label>
                 </div>
 
                 <div class="form-check">
-                    <input name="volunteeringAs" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
+                    <input name="flexCheckChecked3" class="form-check-input" type="checkbox" value=""
+                        id="flexCheckChecked3">
+                    <label class="form-check-label" for="flexCheckChecked3">
                         Conferences and events
                     </label>
                 </div>
 
 
                 <div class="form-check">
-                    <input name="volunteeringAs" class="form-check-input" type="checkbox" value="other"
-                        id="flexCheckChecked" name="interest">
-                    <label class="form-check-label" for="flexCheckChecked" for="other">Other
+                    <input name="flexCheckChecked4" class="form-check-input" type="checkbox" value="other"
+                        id="flexCheckChecked4" onclick="ShowHideOther(this)">
+                    <label class="form-check-label" for="flexCheckChecked4" for="other">Other
                     </label>
-                    <input type="text" id="otherValue" name="other">
+                    <input type="text" id="otherValue" name="other" style="display: none;">
                 </div><br>
 
-                <h5>Chack the days that your'e available to volunteer on: (Please mark)</h5>
+                <h5>Check the days that your'e available to volunteer on: (Please mark)</h5>
 
                 <div class="form-check">
                     <input name="availableNames" class="form-check-input" type="checkbox" value=""

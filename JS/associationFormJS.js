@@ -1,58 +1,54 @@
-// // form validation - add messages to required fields that are empty
-// function validateForm() {
-//     // last name validation
-//     let lastName = document.forms["ourForm"]["lastName"].value;
-//     if (firstName == "" || lastName == "" || Phone == "" || email == "") {
-//         alert("All fields marked with '*' must be filled out");
-//         return false;
-//     }
-// }
-
+// form validation - add messages to required fields that are empty
 function validateForm() {
-    var checkEmail = document.getElementById("email");
-    var stopFirst = checkEmail.indexOf("@");
-    var stopSecond = checkEmail.lastIndexOf(".");
-    if (stopSecond + 2 >= checkEmail.length || stopFirst < 1 || stopSecond < stopFirst + 2) {
-        window.alert("The email address is not valid");
-        checkEmail.focus();
+    // first name validation
+    let firstName = document.forms["ourForm"]["firstName"].value;
+    let lastName = document.forms["ourForm"]["lastName"].value;
+    let Phone = document.forms["ourForm"]["Phone"].value;
+    let email = document.forms["ourForm"]["email"].value;
+
+    // check required inputs are filled
+    // first name validation
+    if (firstName == "") {
+        alert(`all fields marked with " * " must be filled out`);
         return false;
     }
 
-    var first_name = document.formS.first_name;
-    var last_name = document.formS.last_name;
-    var tel = document.formS.tel;
+    // last name validation
+    else if (lastName == "") {
+        alert(`all fields marked with " * " must be filled out`);
+        return false;
+    }
 
-    var letters = /^[A-Za-z]+$/;
-    if (first_name.value.match(letters)) {
-        return true;
+    // phone validation
+    else if (Phone == "") {
+        alert(`all fields marked with " * " must be filled out`);
+        return false;
     }
-    else if (first_name.value.match(letters) == False) {
-        window.alert("The first name need to be only letters");
+
+    // phone validation
+    else if (email == "") {
+        alert(`all fields marked with " * " must be filled out`);
+        return false;
     }
-    if (last_name.value.match(letters)) {
-        return true;
-    }
-    else if (last_name.value.match(letters) == False) {
-        window.alert("The last name need to be only letters");
-    }
+
+    // check formats for rellevant fields
+    // check phone format
+
+
+    // check email format
+
+
+    // check name format
+
 
 }
 
+// show "other" text box
+function ShowHideOther(flexCheckChecked4) {
+    let otherTxt = document.getElementById("otherValue");
+    otherTxt.style.display = flexCheckChecked4.checked ? "block" : "none";
+}
 
-// document.getElementById("flexCheckChecked").onclick = function () {
-//     var otherCheckbox = document.querySelector('input[value="other"]');
-//     var otherText = document.querySelector('input[id="otherValue"]');
-//     otherText.style.visibility = 'hidden';
-
-//     otherCheckbox.addEventListener('change', () => {
-//         if (otherCheckbox.checked) {
-//             otherText.style.visibility = 'visible';
-//             otherText.value = '';
-//         } else {
-//             otherText.style.visibility = 'hidden';
-//         }
-//     });
-// }
 
 
 

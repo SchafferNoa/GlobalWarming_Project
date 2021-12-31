@@ -92,3 +92,15 @@ top: -1px;
     top: -1px;
     *overflow: hidden;    
     }
+
+input:invalid {
+    border: red solid 3px;
+}
+
+input ~ .alert {
+    display: none;
+}
+
+input:invalid ~ .alert {
+    display: block;
+}
