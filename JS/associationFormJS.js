@@ -5,43 +5,70 @@ function validateForm() {
     let lastName = document.forms["ourForm"]["lastName"].value;
     let Phone = document.forms["ourForm"]["Phone"].value;
     let email = document.forms["ourForm"]["email"].value;
+    if (firstName != "") {
+        for (let i = 0; i < firstName.length; i++) {
+            let n = firstName.charCodeAt(i);
+            let strStartsWithALetter = (n >= 65 && n < 91) || (n >= 97 && n < 123);
+            if (strStartsWithALetter==false)
+            {
+                alert('Please enter only Letters');
+                return false;
+                break;
+            }
+          
+            
+        }
+    
+        }
+    if (lastName != "") {
+        for (let i = 0; i < lastName.length; i++) {
+                let n = lastName.charCodeAt(i);
+                let strStartsWithALetter = (n >= 65 && n < 91) || (n >= 97 && n < 123);
+                if (strStartsWithALetter==false)
+                {
+                    alert('Please enter only Letters');
+                    return false;
+                    break;
+                }
+              
+                
+            }
+        
+            }
 
+                    
+    
+    
+    
     // check required inputs are filled
     // first name validation
     if (firstName == "") {
-        alert(`all fields marked with " * " must be filled out`);
+        alert(`Field 'first name'marked with " * " must be filled out`);
         return false;
     }
 
     // last name validation
-    else if (lastName == "") {
-        alert(`all fields marked with " * " must be filled out`);
+    if (lastName == "") {
+        alert(`Field 'last name'marked with " * " must be filled out`);
         return false;
     }
 
     // phone validation
-    else if (Phone == "") {
-        alert(`all fields marked with " * " must be filled out`);
+    if (Phone == "") {
+        alert(`Field 'phone number'marked with " * " must be filled out`);
         return false;
     }
 
     // phone validation
-    else if (email == "") {
-        alert(`all fields marked with " * " must be filled out`);
+    if (email == "") {
+        alert(`Field 'Email'marked with " * " must be filled out`);
         return false;
     }
-
-    // check formats for rellevant fields
-    // check phone format
-
-
-    // check email format
-
-
-    // check name format
 
 
 }
+
+
 
 // show "other" text box
 function ShowHideOther(flexCheckChecked4) {
