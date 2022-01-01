@@ -18,43 +18,38 @@
   gap: .5rem;
   border: 0;
 }
+
 .list-group-checkable .list-group-item {
   cursor: pointer;
   border-radius: .5rem;
 }
-.list-group-item-check {
+
+.list-group-item-radio {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.list-group-item-check:hover + .list-group-item {
-  background-color: var(--bs-light);
+
+.list-group-item-radio:hover + .list-group-item {
+  background-color: rgb(236, 236, 236);
 }
-.list-group-item-check:checked + .list-group-item {
+
+.list-group-item-radio:checked + .list-group-item {
   color: #fff;
-    background-color: var(--bs-blue);
+  background-color: rgb(12, 117, 238);
 }
-.list-group-item-check[disabled] + .list-group-item,
-.list-group-item-check:disabled + .list-group-item {
+
+.list-group-item-radio[disabled] + .list-group-item,
+.list-group-item-radio:disabled + .list-group-item {
   pointer-events: none;
   filter: none;
   opacity: .5;
 }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s;
-}
-
-input[type="checkbox"]:checked ~ .reveal-if-active {
-  opacity: 1;
+.questions{
+  display: none;
   max-height: 100%;
-  overflow: visible;
   padding: 10px 20px;
-  transform: scale(1);
 }
 
 .ques{
@@ -72,19 +67,5 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   margin-bottom: 3%;
   color: rgb(48, 119, 212);
   display: none;
-}
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
 }
 

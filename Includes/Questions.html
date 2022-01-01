@@ -5,9 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Global Warming</title>
 
     <!-- Style sheets -->
@@ -36,15 +38,14 @@
 
         <!-- list of categories (buttons)-->
         <section class="list-group list-group-checkable">
-            <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs" id="Recycling"
-                value="1">
-            <label class="list-group-item py-3" for="Recycling">
+            <input class="list-group-item-radio" type="radio" name="category" id="Recycling-radio" value="Recycling">
+            <label class="list-group-item py-3" for="Recycling-radio">
                 <h3>Recycling</h3>
                 <span class="d-block small opacity-50">For those who want to know more about recycle</span>
             </label>
 
             <!-- questions about recycle, and answers as paragraphs -->
-            <div class="reveal-if-active">
+            <div class="questions" id="Recycling">
                 <a class="ques" target="1"><br>Is recycling really helping the planet?<br></a>
                 <p class="answer" id="answer1">By reducing air and water pollution and saving energy, recycling
                     offers an
@@ -77,8 +78,8 @@
                     city?<br></a>
                 <p class="answer" id="answer3">
                     <a href="https://www.tmir.org.il/Page/%D7%9E%D7%99%D7%A7%D7%95%D7%9E%D7%99-%D7%A4%D7%97-%D7%A1%D7%92%D7%95%D7%9C"
-                        target="_blank">Press
-                        here </a> to find a map that describes all locations of tanks in your city.
+                        target="_blank"><b>Press here</b> </a> to find a map that describes all locations of tanks in
+                    your city.
                 </p>
 
                 <a class="ques" target="4"><br>If we have so many recycling tanks, why do I still need the green garbage
@@ -100,28 +101,70 @@
                 </p>
             </div>
 
-            <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs" id="Volunteering"
-                value="1">
-            <label class="list-group-item py-3" for="Volunteering">
+
+            <input class="list-group-item-radio" type="radio" name="category" id="Volunteering-radio"
+                value="Volunteering">
+            <label class="list-group-item py-3" for="Volunteering-radio">
                 <h3>Volunteering</h3>
                 <span class="d-block small opacity-50">For those who want to know more about volunteering at
                     associations and/or be more active at home</span>
             </label>
 
-            <input class="list-group-item-check" type="checkbox" name="listGroupCheckablecheckboxs"
-                id="listGroupCheckablecheckboxs3" value="1">
-            <label class="list-group-item py-3" for="listGroupCheckablecheckboxs3">
+            <!-- questions about volunteering, and answers as paragraphs -->
+            <div class="questions" id="Volunteering">
+                <a class="ques" target="6"><br>Where can I find ways to volunteer?<br></a>
+                <p class="answer" id="answer6">In out website you can find many associations,
+                    <a href="Association.html" target="_blank"><b> click here</b></a> to fond out more about them
+                </p>
+
+                <a class="ques" target="7"><br>Can I volunteer in a one time event?<br></a>
+                <p class="answer" id="answer7">
+                    Yes of course. You can sign in to volunteering with an association and in the application form you
+                    can just point that this is a one time volunteering.
+                    to get to this form you should <a href="Association.html" target="_blank"><b> click here</b></a>,
+                    find an association you like and press on it. In the info page you'll find the form.
+                </p>
+            </div>
+
+
+            <input class="list-group-item-radio" type="radio" name="category" id="Climate-radio" value="Climate">
+            <label class="list-group-item py-3" for="Climate-radio">
                 <h3>Climate</h3>
                 <span class="d-block small opacity-50">For those who want to know more about climate changes and it's
                     consequences</span>
             </label>
+
+            <!-- questions about climate, and answers as paragraphs -->
+            <div class="questions" id="Climate">
+                <a class="ques" target="8"><br>What is climate change in simple words?<br></a>
+                <p class="answer" id="answer8">
+                    Climate change is the long-term alteration of temperature and typical weather patterns in a place.
+                    The cause of current climate change is largely human activity, like burning fossil fuels, like
+                    natural gas, oil, and coal. Burning these materials releases what are called greenhouse gases into
+                    Earth's atmosphere.
+                </p>
+
+                <a class="ques" target="9"><br>What are the 5 main causes of climate change?<br></a>
+                <ul class="answer" id="answer9">
+                    <li>Burning coal, oil and gas produces carbon dioxide and nitrous oxide</li>
+                    <li>Cutting down forests (deforestation)</li>
+                    <li>Increasing livestock farming</li>
+                    <li>Fertilisers containing nitrogen produce nitrous oxide emissions</li>
+                    <li>Fluorinated gases are emitted from equipment and products that use these gases</li>
+                </ul>
+
+                <a class="ques" target="10"><br>What are two effects of climate change on the environment?<br></a>
+                <p class="answer" id="answer10">
+                    Increased heat, drought and insect outbreaks, all linked to climate change, have increased
+                    wildfires. Declining water supplies, reduced agricultural yields, health impacts in cities due to
+                    heat, and flooding and erosion in coastal areas are additional concerns
+                </p>
+            </div>
         </section>
     </main>
 
-    <div id="footer"></div>
 
-    <!-- bootstrap import -->
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="footer"></div>
 
     <!-- jQuery functions -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -133,11 +176,32 @@
             // load footer
             $("#footer").load("footer.html");
 
+            // show questions
+            $("input:radio").click(function () {
+                var inputValue = $(this).attr("value");
+                var targetDiv = $("#" + inputValue);
+                $(".questions").not(targetDiv).hide();
+                (targetDiv).toggle();
+            });
+
             // show answers
             $(".ques").click(function () {
                 var thisAns = jQuery("#answer" + $(this).attr("target"));
                 $(".answer").not(thisAns).hide();
                 thisAns.toggle();
+            });
+
+            // allow unchecking radio button
+            var $radios = $('input[type="radio"]');
+            $radios.click(function () {
+                var $this = $(this);
+                if ($this.data('checked')) {
+                    this.checked = false;
+                }
+                var $otherRadios = $radios.not($this).filter('[name="'
+                    + $this.attr('name') + '"]');
+                $otherRadios.prop('checked', false).data('checked', false);
+                $this.data('checked', this.checked);
             });
         });
     </script>
