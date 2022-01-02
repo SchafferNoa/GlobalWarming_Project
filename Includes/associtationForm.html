@@ -105,32 +105,31 @@
         <form id="formS" action="#" method="post" name="ourForm" onsubmit="return validateForm()">
             <section class="one">
                 <h4>About Me</h4>
-                <p> <label id="first_name" class="lbl"> Your First Name: </label>
-                    <input name="firstName" type="text" placeholder="Your First name" maxlength="20" autocomplete="on"
+                <p>   <span style="color: red;">*</span>  <label id="first_name" class="lbl"> Your First Name: </label>
+                   <input name="firstName" type="text" placeholder="Your First name" maxlength="20" autocomplete="on"
                         title="Here, You can write your first name" class='inputt'>
                 </p>
 
-                <p> <label id="last_name" class="lbl"> Your Last Name: </label>
-                    <input name="lastName" type="text" placeholder="Your Last name" maxlength="20" autocomplete="on"
+                <p>  <span style="color: red;">*</span>  <label id="last_name" class="lbl"> Your Last Name: </label>
+                     <input name="lastName" type="text" placeholder="Your Last name" maxlength="20" autocomplete="on"
                         title="Here, You can write your last name" class='inputt'>
-                        <span class="alert"><br>Ten digits number: 05#-###-####</span>
+                      
 
                 </p>
 
                 <p><label id="date" class="lbl">Your Birthday: </label> <input name="BirthDay" class="inputt"
                         type="date"></p>
-                <p><label class="lbl"><span style="color: red;">*</span> Phone Number:</label>
-                    <input name="Phone" class="inputt" id="tel" type="tel" placeholder="05#-###-####"
-                        pattern="[0]{1}[5]{1}[0-9]{1}-[0-9]{3}-[0-9]{4}" maxlength="12"
-                        title="Make sure you enter 10 digits number as required: 05#-###-####">
-                    <span class="alert"><br>Ten digits number: 05#-###-####</span>
-
+              
+                <p> <span style="color: red;">*</span><label class="lbl"> Phone Number:</label>
+                     <input name="Phone" class="inputt" id="tel" type="tel" placeholder="###-###-####">
                 </p>
 
-                <p>
-                    <label class="lbl"><span style="color: red;">*</span> Email:</label>
-                    <input class="inputt" id="email" type="text" placeholder="yourMail@something.com" name="email" >
+                
+           
+              <p><span style="color: red;">*</span><label class="lbl"> Email:</label>
+                  <input class="inputt" id="email" type="text" placeholder="yourMail@something.com" name="email" >
                 </p>
+               
             </section>
 
             <section>
