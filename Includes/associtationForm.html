@@ -39,6 +39,8 @@
 
     <main>
         <h1>GREEN COURSE</h1>
+        <!-- Video that explain about Megama Yeruka -->
+
         <iframe id="video" controls src="../linkedFiles/מגמה ירוקה - מובילים אקטיביזם סביבתי.mp4">
         </iframe>
 
@@ -102,7 +104,9 @@
         <h1>JOIN US!</h1>
         <p>required fields are followed by <span style="color: red;">*</span></p>
 
-        <form id="formS" action="#" method="post" name="ourForm" onsubmit="return validateForm()">
+        <form id="formS" action="./AssociationForm.php" method="post" name="ourForm" onsubmit="return validateForm()">
+            <!--First section is information about a voulnteer -->
+
             <section class="one">
                 <h4>About Me</h4>
                 <p>   <span style="color: red;">*</span>  <label id="first_name" class="lbl"> Your First Name: </label>
@@ -113,15 +117,14 @@
                 <p>  <span style="color: red;">*</span>  <label id="last_name" class="lbl"> Your Last Name: </label>
                      <input name="lastName" type="text" placeholder="Your Last name" maxlength="20" autocomplete="on"
                         title="Here, You can write your last name" class='inputt'>
-                      
-
+                    
                 </p>
 
                 <p><label id="date" class="lbl">Your Birthday: </label> <input name="BirthDay" class="inputt"
                         type="date"></p>
               
                 <p> <span style="color: red;">*</span><label class="lbl"> Phone Number:</label>
-                     <input name="Phone" class="inputt" id="tel" type="tel" placeholder="###-###-####">
+                     <input name="Phone" class="inputt" id="tel" type="tel" placeholder="###-#######" maxlength="11">
                 </p>
 
                 
@@ -131,35 +134,49 @@
                 </p>
                
             </section>
+    <!-- section 2 is about the volunteering in general-->
 
             <section>
                 <h4>About The Volunteering</h4>
 
-                <p><label class="lbl">Volunteering: </label><textarea class="inputt" cols="30" rows="3"
+                <p><label class="lbl">Volunteering: </label><textarea class="inputt" cols="30" rows="3" name="explain"
                         placeholder=" &#10;&#10;Here the place to explain why do you want to volunteering"></textarea>
                 </p>
                 <p>
-                <h5>I would like to participate in the following: (Please mark) </h5>
-                <div class="form-check">
-                    <input name="flexCheckChecked1" class="form-check-input" type="checkbox" value=""
+                 <h5>I would like to participate in the following: (Please choose) </h5>
+                 <div class="form-check">
+                    <input class="form-check-input" type="radio" name="participate" value="Assistance at fundraising evenings, special projects" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Assistance at fundraising evenings, special projects
+                    </label>
+                     </div>
+                     <div class="form-check">
+                         <input class="form-check-input" type="radio" name="participate"  value="Conferences and events" id="flexRadioDefault2">
+                         <label class="form-check-label" for="flexRadioDefault2">
+                            Conferences and events
+                         </label>
+                          </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="participate"  value="marketing and advertising
+                        " id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            marketing and advertising
+                        </label>
+                            </div>
+                   
+           <!--   <div class="form-check">
+                    <input name="participate[]" class="form-check-input" type="checkbox" value="Assistance at fundraising evenings, special projects"
                         id="flexCheckChecked1">
                     <label class="form-check-label" for="flexCheckChecked1">
                         Assistance at fundraising evenings, special projects
                     </label>
                 </div>
                 <div class="form-check">
-                    <input name="flexCheckChecked2" class="form-check-input" type="checkbox" value=""
+                    <input name="participate[]" class="form-check-input" type="checkbox" value="Conferences and events"
                         id="flexCheckChecked2">
                     <label class="form-check-label" for="flexCheckChecked2">
                         Conferences and events </label>
-                </div>
-
-                <div class="form-check">
-                    <input name="flexCheckChecked3" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked3">
-                    <label class="form-check-label" for="flexCheckChecked3">
-                        Conferences and events
-                    </label>
                 </div>
 
 
@@ -170,76 +187,40 @@
                     </label>
                     <input type="text" id="otherValue" name="other" style="display: none;">
                 </div><br>
+            -->
+                <h5>Check the days that your'e available to volunteer on: (Please choose)</h5>
 
-                <h5>Check the days that your'e available to volunteer on: (Please mark)</h5>
-
-                <div class="form-check">
-                    <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Sunday
-                    </label>
+               <div class="form-check">
+               <input class="form-check-input" type="radio" name="availableTime" value="Mid-Week" id="flexRadioDefault2">
+               <label class="form-check-label" for="flexRadioDefault2">
+                   Mid-Week
+               </label>
                 </div>
                 <div class="form-check">
-                    <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                        id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Monday
+                    <input class="form-check-input" type="radio" name="availableTime" value="End-Week" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        End-Week
                     </label>
-                </div >
-
-                    <div class="form-check">
-                        <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                            id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Tuesday
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                            id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Wednesday
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                            id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Thursday
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                            id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Friday
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input name="availableNames" class="form-check-input" type="checkbox" value=""
-                            id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Saturday
-                        </label>
-                    </div>
+                     </div>
+              
+                
                     <p>
-                    <h5>Volunteer days are possible: (Please choose)</h5>
+                    <h5>Volunteer Frequencies are possible: (Please choose)</h5>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
-                            checked>
+                        <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault1"
+                            value="Up to once a month">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Up to once a month </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault2"  value="Up to three a month">
                         <label class="form-check-label" for="flexRadioDefault2">
                             Up to three times a month
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault2"  value="Three and up">
                         <label class="form-check-label" for="flexRadioDefault2">
                             Three and up
                         </label>
@@ -247,16 +228,16 @@
                     </p>
             </section>
 
+    <!-- section 3 other information that important to know -->
 
             <section class="three">
                 <p><label> Have you heard about Us before ? </label>
                     <select name="select_box" size="1">
-                        <option value="attempt 123">Yes</option>
-                        <option value="attempt 123" selected>No</option>
+                        <option  value="Yes">Yes</option>
+                        <option  value="No" >No</option>
                     </select>
                 </p>
                 <p>Satisfaction from form <input name="satisfaction" type="range" min="0" max="10" step="1">(range)</p>
-                <p><label>add File <input type="file" name="myFile"></label></p>
             </section>
             <input type="submit" class="btn btn-primary" value="Submit">
         </form>

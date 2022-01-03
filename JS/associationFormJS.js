@@ -55,13 +55,14 @@ function validateForm() {
     }
 
    //check if the phone number is suitable to format
+    var formatPhone=/^05\d([-]{0,1})\d{7}$/
 
-    var formatPhone=/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if(!Phone.match(formatPhone)){
         alert("The phone number is not valid")
 
         return false;
-    } 
+    }
+    
   //check if the email is null
     if (email == "") {
         alert(`Field 'Email' marked with " * " must be filled out`);
