@@ -1,15 +1,21 @@
     <?php
+    // configuration parameters
     $server_name = "localhost";
     $user_name = "advame_mYADMIN";
     $password = "123456";
     $database = "advame_megamaYeruka";
 
+    // connect to the DB
     $conn = new mysqli($server_name, $user_name, $password, $database);
+    // check the connection
     if ($conn->connect_error) {
         die("Error connecting: " . $conn->connect_error);
     }
 
+    // give feedback
     echo "<h1>Thank you for the registration!</h1>";
+
+    // run SQL query
     $sql = "select firstName,lastName,birthday,phoneNumber,email,VolunteeringExp,timeAvailable,frequencies,heardAboutUs,SatisfactionFrom,participateIn from Volunteers";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
@@ -77,31 +83,26 @@
     $timeAvailable = $_POST['availableTime'];  
     $participateIn=$_POST['participate'];
 
-  
-
-
     $insert_sql = "INSERT INTO Volunteers (firstName,lastName,birthday,phoneNumber,email,VolunteeringExp,timeAvailable,frequencies,heardAboutUs,SatisfactionFrom, participateIn) VALUES ('" . $firstName . "','" . $lastName . "','" . $birthday . "','" . $phoneNumber . "','" . $email . "','" . $VolunteeringExp . "','" . $timeAvailable . "','" . $frequencies . "','" . $heardAboutUs . "','" . $SatisfactionFrom . "','" . $participateIn . "')";
 
+    // check data
     $result = $conn->query($insert_sql);
-    
-   
     if ($result == true) {
         echo "<h2>The Table After Change</h2>";
         $sql = "select firstName,lastName,birthday,phoneNumber,email,VolunteeringExp,timeAvailable,frequencies,heardAboutUs,SatisfactionFrom,participateIn from Volunteers";
         $result2 = $conn->query($sql);
         echo    "
             <style>
-            table {
-                background-color: gray;
-                color: white;
-                border-color: black;
-                border-width: 3px;
-                border-style: solid;
-                margin:auto;
-                text-align: center;
-
-            }
-        </style>
+                table {
+                    background-color: gray;
+                    color: white;
+                    border-color: black;
+                    border-width: 3px;
+                    border-style: solid;
+                    margin:auto;
+                    text-align: center;
+                }
+            </style>
             <table>
                 <tr>
                     
@@ -120,7 +121,7 @@
                 </tr>";
         while ($row = $result2->fetch_assoc()) {
             echo "
-                    <tr>
+                <tr>
                     <td>" . $row["firstName"] . "</td>
                     <td>" . $row["lastName"] . " </td>
                     <td>" . $row["birthday"] . "</td>
@@ -133,12 +134,11 @@
                     <td>" . $row["SatisfactionFrom"] . "</td>
                     <td>" . $row["participateIn"] . "</td>
 
-                    </tr>";
+                </tr>";
         }
         echo "</table>";
+        
     } else {
         echo "error: " . $conn->error;
     }
-
-
     ?>

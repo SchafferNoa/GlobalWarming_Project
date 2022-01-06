@@ -9,7 +9,14 @@
     display: block;
     text-align: center;
 }
-/*Here is everything related to the form itself */
+
+.video{   
+    display: block;   
+    margin: 0 auto;
+    height: 600px;
+    width: 80%;
+}
+
 #formS{
     margin-left: auto;
     margin-right: auto;
@@ -21,12 +28,12 @@
     width:80%
   
 }
-/*The first section into the forms,  detalis about the person himself */
-.one{
+
+/*The first section into the forms*/
+#one{
     border-bottom: 2px solid;
 }
 
-/*Here is everything related to the video into the AssociationForm page. */
 #video{   
     margin: 1%;
     height: 600px;
@@ -34,7 +41,6 @@
 }
 
 /*information about the assocation */
-
 #secArticle{
     padding-left: 15px;
     margin:auto;
@@ -44,15 +50,15 @@
     width:80%;
 }
 
-p{overflow: auto;margin-bottom: 5%;}
+/* for each input in the form */
+.question{overflow: auto;margin-bottom: 5%;}
 
-/*The name of the labels in the form */
+
 .lbl{
 display: block;
 padding-right: 10px;
 padding-left: 22px;
 text-indent: -22px;
-
 }
 
 /*The information that is filled out in the form */
@@ -64,6 +70,7 @@ float:left ;
     color: black;
     
 }
+
 /*All the checkbox buttons in the same style */
 .checkboxx{
 width: 13px;
@@ -74,7 +81,6 @@ vertical-align:middle;
 position: relative;
 top: -1px;
 *overflow: hidden;
-
 }
 
 /*All radio buttons in the same style */

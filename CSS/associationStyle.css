@@ -1,19 +1,7 @@
-.associations{
-    margin-top: 2%;
-}
-
-.diving{
+.associ{
     margin: 2%;
     border: 30cm cornflowerblue;
-}
-
-#img1{
-    height: 100px;
-    width: 300px;
-    margin-left: 15%;
-    margin-top: 5%;
-
-
+    text-align: center;
 }
 
 .P{
@@ -23,44 +11,10 @@
     font-family: Arial;
 }
 
-#img2{
-    height: 110px;
-    width: 140px;
-    margin-left: 33%;
-    margin-top: 5%;
-
-
-}
-
-#img3{
-    height: 200px;
-    width: 300px;
-    margin-left: 18%;
-    margin-top: 5%;
-
-}
-
-#img4{
+.image{
+    padding: 5%;
     height: 180px;
-    width: 300px;
-    margin-top: 5%;
-    margin-left: 18%;
-    
-}
-
-#img5{
-    height: 100px;
-    width: 300px;
-    margin-left: 18%;
-    margin-top: 5%;
-
-}
-
-#img6{
-    height: 100px;
-    width: 300px;
-    margin-left: 18%;
-    margin-top: 5%;
+    max-width: 100%;
 }
 
 a{
@@ -70,35 +24,23 @@ a{
     font-family: Arial;
 }
 
-@media screen and (max-width: 1000px) {
-
-    section{width: 100%;}
-    header{width: 100%;}
-    .diving{width: 100%;}
-    article{width: 100%}
-    #img1{width: 100%;}
-    #img2{width: 100%;}
-    #img3{width: 100%;}
-    #img4{width: 100%;}
-    #img5{width: 100%;}
-    #img6{width: 100%;}
-    .P{width: 100%;}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
 }
 
-@media screen and (max-width: 990px) {
-    
-    
-    section{width: 140%;}
-    header{width: 140%;}
-    .diving{width: 140%;}
-    article{width: 140%}
-    #img1{width:  50%;}
-    #img2{width:  45%;}
-    #img3{width:  80%;}
-    #img4{width:  45%;}
-    #img5{width:  45%;}
-    #img6{width:  45%;}
-    .P{width: 100%;}	
+@media only screen and (min-width: 750px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
-
-
