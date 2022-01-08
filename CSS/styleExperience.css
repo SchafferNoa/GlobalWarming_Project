@@ -1,17 +1,25 @@
 .experience{
     margin: 5%;
+    margin-left: 8%;
+    background-color: beige;
+    font-size: larger;
 }
 
-#Share1{
-    margin: 30%;
+.Share1{
     text-align: center;
-    
+    font-size:x-large;
 }
 
-#review-header{
+.h3{
+
     text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
+
+}
+
+.Add{
+
+    margin-right: 20%;
+
 }
 
 #send:hover{
@@ -21,10 +29,18 @@
     text-decoration: none;
 }
 
+#send{
+    text-align: center;
+    font-size:x-large;
+
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
 }
+
+
 
 @media only screen and (min-width: 750px) {
     /* For desktop: */
