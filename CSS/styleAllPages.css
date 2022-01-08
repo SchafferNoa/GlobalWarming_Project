@@ -6,8 +6,10 @@
 }
 
 body{
-    background-color: rgba(212, 220, 228, 0.479);
-}
+   
+    background-image: url("https://ae01.alicdn.com/kf/HTB1LwJMJVXXXXcaXpXXq6xXFXXXK/5x5ft.jpg");
+    background-size: 2000px auto;
+   }
 
 [class*="col-"] {
 	float: left;

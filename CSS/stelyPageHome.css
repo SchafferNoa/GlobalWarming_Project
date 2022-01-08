@@ -6,6 +6,7 @@
 }
 
 .graph{
+
   width: 100%;
   height: 500px;
 }
@@ -18,14 +19,31 @@
 .news > h1 {
   margin: 12px;
   padding: 9px;
+  font-family:'Calibri';
+  font-style: italic;
 }
   
 .news>article>h2, .news>article>p, .news>article>a {
   padding-left: 12px;
   padding-right: 12px;
+  font-family:'Calibri';
   margin: 15px;
-  font-size: 95%;
+  Font-weight: bolder;
+  font-size: large;
 }
 
 
-  
+li{
+  font-family:Calibri;
+  font-size: large;
+  font-weight: bolder;
+  color:white;
+}
+
+p{
+  font-family:Calibri;
+  font-size: large;
+  font-weight: bolder;
+  color: white;
+
+}
