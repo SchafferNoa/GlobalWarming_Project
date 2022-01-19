@@ -46,3 +46,7 @@ a[href="#"]:hover{
   text-decoration: none;
 }
 
+.center{
+  text-align: center;
+}
+
