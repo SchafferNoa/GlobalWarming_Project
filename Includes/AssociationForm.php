@@ -13,7 +13,7 @@
     }
 
     // give feedback
-    echo "<h1>Thank you for the registration!</h1>";
+    echo "<h1>For checking (not for normal users) - changes in our DB</h1>";
 
     // run SQL query
     $sql = "select firstName,lastName,birthday,phoneNumber,email,VolunteeringExp,timeAvailable,frequencies,heardAboutUs,SatisfactionFrom,participateIn from Volunteers";

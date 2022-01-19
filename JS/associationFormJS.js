@@ -13,7 +13,6 @@ function validateForm() {
             if (strStartsWithALetter == false) {
                 alert('Please enter only letters for your name');
                 return false;
-                break;
             }
         }
     }
@@ -26,7 +25,6 @@ function validateForm() {
             if (strStartsWithALetter == false) {
                 alert('Please enter only letters for your name');
                 return false;
-                break;
             }
         }
     }
@@ -51,10 +49,7 @@ function validateForm() {
         alert("The email address is not valid")
         return false;
     }
-}
 
-// // show "other" text box
-// function ShowHideOther(flexCheckChecked4) {
-//     let otherTxt = document.getElementById("otherValue");
-//     otherTxt.style.display = flexCheckChecked4.checked ? "block" : "none";
-// }
+    //if there was no problem in the form, the user have registered and we congradulate him
+    alert("Thank you for your registration!\nSee you soon :)")
+}
