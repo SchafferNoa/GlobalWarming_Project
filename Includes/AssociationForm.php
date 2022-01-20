@@ -32,7 +32,7 @@
         }
     </style>
         <h2>The Table Before change</h2>
-        <table>
+        <table border="1">
             <tr>
                 <th>firstName</th>
                 <th>lastName</th>
@@ -103,7 +103,7 @@
                     text-align: center;
                 }
             </style>
-            <table>
+            <table border="1">
                 <tr>
                     
                 <th>firstName</th>
