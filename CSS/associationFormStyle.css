@@ -32,6 +32,7 @@
 /*The first section into the forms*/
 #one{
     border-bottom: 2px solid;
+
 }
 
 #video{   
@@ -55,7 +56,8 @@
 }
 
 /* for each input in the form */
-.question{overflow: auto;}
+.question{overflow: auto;
+}
 
 
 .lbl{
