@@ -1,4 +1,4 @@
-    <?php
+<?php
     // configuration parameters
     $server_name = "localhost";
     $user_name = "advame_mYADMIN";
@@ -13,7 +13,7 @@
     }
 
     // give feedback
-    echo "<h1>For checking (not for normal users) - changes in our DB</h1>";
+    echo "<h1>Thank you for the registration!</h1>";
 
     // run SQL query
     $sql = "select firstName,lastName,birthday,phoneNumber,email,VolunteeringExp,timeAvailable,frequencies,heardAboutUs,SatisfactionFrom,participateIn from Volunteers";
@@ -32,7 +32,7 @@
         }
     </style>
         <h2>The Table Before change</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>firstName</th>
                 <th>lastName</th>
@@ -103,7 +103,7 @@
                     text-align: center;
                 }
             </style>
-            <table border="1">
+            <table>
                 <tr>
                     
                 <th>firstName</th>
