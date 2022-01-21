@@ -57,6 +57,7 @@
 
 /* for each input in the form */
 .question{overflow: auto;
+    margin-bottom: 25px;
 }
 
 
