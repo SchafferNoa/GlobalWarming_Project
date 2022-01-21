@@ -105,7 +105,7 @@
 
         </section>
 
-        <!-- volunteering part -->
+        <!-- volunteering form part -->
         <section>
             <h1>JOIN US!</h1>
             <p>required fields are followed by <span style="color: red;">*</span></p>
@@ -116,30 +116,31 @@
                 <section id="one">
                     <h4>About Me</h4>
                     <div class="question"> <span style="color: red;">*</span> <label id="first_name" class="lbl"> Your
-                            First Name: </label>
-                        <input name="firstName" type="text" placeholder="Your First name" maxlength="20"
-                            autocomplete="on" title="Here, You can write your first name" class='inputt'>
+                            First Name:<br>
+                            <input name="firstName" type="text" placeholder="Your First name" maxlength="20"
+                                autocomplete="on" title="Here, You can write your first name" class='inputt'></label>
                     </div>
 
                     <div class="question"> <span style="color: red;">*</span> <label id="last_name" class="lbl"> Your
-                            Last Name:
-                        </label>
-                        <input name="lastName" type="text" placeholder="Your Last name" maxlength="20" autocomplete="on"
-                            title="Here, You can write your last name" class='inputt'>
+                            Last Name:<br>
+                            <input name="lastName" type="text" placeholder="Your Last name" maxlength="20"
+                                autocomplete="on" title="Here, You can write your last name" class='inputt'></label>
                     </div>
 
-                    <div class="question"><label id="date" class="lbl">Your Birthday: </label> <input name="BirthDay"
-                            class="inputt" type="date">
+                    <div class="question"><label id="date" class="lbl">Your Birthday:<br>
+                            <input name="BirthDay" class="inputt" type="date"> </label>
                     </div>
 
-                    <div class="question"> <span style="color: red;">*</span><label class="lbl"> Phone Number:</label>
-                        <input name="Phone" class="inputt" id="tel" type="tel" placeholder="###-#######" maxlength="11">
+                    <div class="question"> <span style="color: red;">*</span><label class="lbl"> Phone Number:<br>
+                            <input name="Phone" class="inputt" id="tel" type="tel" placeholder="###-#######"
+                                maxlength="11"></label>
                     </div>
 
 
 
-                    <div class="question"><span style="color: red;">*</span><label class="lbl"> Email:</label>
-                        <input class="inputt" id="email" type="text" placeholder="yourMail@something.com" name="email">
+                    <div class="question"><span style="color: red;">*</span><label class="lbl"> Email:<br>
+                            <input class="inputt" id="email" type="text" placeholder="yourMail@something.com"
+                                name="email"></label>
                     </div>
                 </section>
 
@@ -147,31 +148,30 @@
                 <section>
                     <h4>About The Volunteering</h4>
 
-                    <div class="question"><label class="lbl">Volunteering: </label><textarea class="inputt" cols="30"
-                            rows="3" name="explain"
-                            placeholder=" &#10;&#10;Here the place to explain why do you want to volunteering"></textarea>
+                    <div class="question"><label class="lbl">Volunteering:<br>
+                            <textarea class="inputt" cols="30" rows="3" name="explain"
+                                placeholder=" &#10;&#10;Here is the place to explain why do you want to volunteering"></textarea></label>
                     </div>
+
                     <div class="question">
                         <h5>I would like to participate in the following: (Please choose) </h5>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="participate"
-                                value="Assistance at fundraising evenings, special projects" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Assistance at fundraising evenings, special projects
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="participate"
-                                value="Conferences and events" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Conferences and events
-                            </label>
-                        </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="participate" value="marketing and advertising
-                        " id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="participate"
+                                value="Assistance at fundraising evenings, special projects" id="fundraising">
+                            <label class="form-check-label" for="fundraising">
+                                Assistance at fundraising evenings, special projects
+                            </label><br>
+
+                            <input class="form-check-input" type="radio" name="participate"
+                                value="Conferences and events" id="Conferences">
+                            <label class="form-check-label" for="Conferences">
+                                Conferences and events
+                            </label><br>
+
+                            <input class="form-check-input" type="radio" name="participate"
+                                value="marketing and advertising" id="marketing">
+                            <label class="form-check-label" for="marketing">
                                 marketing and advertising
                             </label>
                         </div>
@@ -181,16 +181,13 @@
                         <h5>Check the days that your'e available to volunteer on: (Please choose)</h5>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="availableTime" value="Mid-Week"
-                                id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="availableTime" value="Mid-Week" id="Mid">
+                            <label class="form-check-label" for="Mid">
                                 Mid-Week
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="availableTime" value="End-Week"
-                                id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            </label><br>
+
+                            <input class="form-check-input" type="radio" name="availableTime" value="End-Week" id="End">
+                            <label class="form-check-label" for="End">
                                 End-Week
                             </label>
                         </div>
@@ -200,24 +197,22 @@
                         <h5>Volunteer Frequencies are possible: (Please choose)</h5>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault1"
+                            <input class="form-check-input" type="radio" name="Frequencies" id="once"
                                 value="Up to once a month">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Up to once a month </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault2"
+                            <label class="form-check-label" for="once">
+                                Up to once a month </label><br>
+
+                            <input class="form-check-input" type="radio" name="Frequencies" id="three"
                                 value="Up to three a month">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <label class="form-check-label" for="three">
                                 Up to three times a month
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Frequencies" id="flexRadioDefault2"
+                            </label><br>
+
+                            <input class="form-check-input" type="radio" name="Frequencies" id="Three"
                                 value="Three and up">
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <label class="form-check-label" for="Three">
                                 Three and up
-                            </label>
+                            </label><br>
                         </div>
                     </div>
                 </section>
